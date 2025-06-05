@@ -22,7 +22,7 @@ function Model({
   rotation = [0, 0, 0]
 }: PropertyModelProps) {
   const modelRef = useRef<Mesh>(null);
-  const { scene } = useGLTF('/models/house.glb', true);
+  const { scene } = useGLTF(modelUrl, true);
 
   useEffect(() => {
     if (modelRef.current) {

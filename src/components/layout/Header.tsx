@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Search, Menu, X, Globe2 } from 'lucide-react';
+import { Home, Menu, X, Globe2 } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
