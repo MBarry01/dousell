@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PropertyType, PropertyAmenity } from '../../types/property';
+import { PropertyType } from '../../types/property';
 import { amenities } from '../../data/amenities';
 import { Upload, Plus } from 'lucide-react';
 
@@ -162,7 +162,6 @@ export default function CreateListingForm({ onSubmit }: CreateListingFormProps) 
                   className="hidden"
                 />
                 <span className="flex items-center">
-                  {/* @ts-ignore */}
                   {React.createElement(amenity.icon, { className: 'w-5 h-5 mr-2' })}
                   {amenity.name}
                 </span>

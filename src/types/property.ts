@@ -1,3 +1,5 @@
+import { ComponentType } from 'react';
+
 export type PropertyType = 'house' | 'apartment' | 'studio' | 'room';
 
 export type PropertyStatus = 'available' | 'rented' | 'pending';
@@ -5,7 +7,10 @@ export type PropertyStatus = 'available' | 'rented' | 'pending';
 export interface PropertyAmenity {
   id: string;
   name: string;
-  icon: string;
+  /**
+   * React component for the amenity icon
+   */
+  icon: ComponentType<{ className?: string }>;
 }
 
 export interface RentalListing {
